@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">dice</string>
+    <string name="PlayerSetupTitle">Enter Your Name</string>
+    <string name="Label1">Player 1</string>
+    <string name="Label2">Player 2</string>
+    <string name="SummitButton">Summit Name</string>
+    <string name="NameHint">Enter Your Name</string>
+</resources>

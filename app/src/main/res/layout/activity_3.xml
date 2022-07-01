@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EF8F8F"
+    tools:context=".Activity3">
+
+    <ImageView
+        android:id="@+id/toss2"
+        android:layout_width="108dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/toss3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/toss3"
+        android:layout_width="108dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/toss1"
+        android:layout_width="108dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintEnd_toStartOf="@+id/toss2"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice1" />
+
+    <TextView
+        android:id="@+id/bet2"
+        android:layout_width="115dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bet1"
+        app:layout_constraintTop_toBottomOf="@+id/toss3" />
+
+    <TextView
+        android:id="@+id/bet1"
+        android:layout_width="114dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/bet2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toss1" />
+
+    <Button
+        android:id="@+id/player1btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_button"
+        android:text="Player 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/player2btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bet1"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <Button
+        android:id="@+id/player2btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_button"
+        android:text="Player 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/player1btn"
+        app:layout_constraintTop_toBottomOf="@+id/bet2"
+        app:layout_constraintVertical_bias="0.788" />
+
+    <TextView
+        android:id="@+id/player1_toss"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Score"
+        app:layout_constraintBottom_toTopOf="@+id/toss1"
+        app:layout_constraintEnd_toStartOf="@+id/toss2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/player2_toss"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:hint="Score"
+        app:layout_constraintBottom_toTopOf="@+id/toss3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintStart_toEndOf="@+id/player1_toss" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="205dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="24dp"
+        android:hint="You Got"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player1namedisp"
+        android:layout_width="126dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="164dp"
+        android:gravity="center"
+        android:text="Player 1 Name"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bet1" />
+
+    <TextView
+        android:id="@+id/player2namedisp"
+        android:layout_width="126dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="156dp"
+        android:gravity="center"
+        android:text="Player 2 Name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toEndOf="@+id/player1namedisp"
+        app:layout_constraintTop_toBottomOf="@+id/bet2" />
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="247dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="292dp"
+        android:gravity="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
